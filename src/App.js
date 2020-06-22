@@ -22,41 +22,7 @@ import './App.css';
 
 export default function BasicExample() {
   return (
-    <div>
-      <Router>
-
-        {/* Navigation */}
-        <header>
-          <nav id="navbar">
-            <div className="container">
-              <h1 className="logo"><a href={"/"}>Instagram</a></h1>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/profile">Profile</Link>
-                </li>
-                <li>
-                  <Link to="/feed">Feed</Link>
-                </li>
-                <li>
-                  <Link to="/search">Search</Link>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-
-        <div>
-          {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
-
+    <>
           <Switch>
             <Route exact path="/">
               <HomePage />
@@ -70,46 +36,8 @@ export default function BasicExample() {
             <Route path="/search">
               <SearchPage />
             </Route>
-          </Switch>
-        </div>
-      </Router>
-
-      {/* Footer */}
-
-      <footer id="main-footer">
-        <nav id="footer-nav">
-          <ul>
-            <li><a href={"/"}>Home</a></li>
-            <li><a href={"/profile"}>Profile</a></li>
-            <li><a href={"/Feed"}>Feed</a></li>
-            <li><a href={"/search"}>Search</a></li>
-          </ul>
-        </nav>
-
-
-        <figure class="icons">
-          <div class="icon-container">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener"
-            ><img
-                src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png"
-                alt="facebook-logo"
-              /></a>
-            <a href="www.twitter.com" target="_blank" rel="noopener"
-            ><img
-                src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-512.png"
-                alt="twitter-logo"
-              /></a>
-            <a href="www.instagram.com" target="_blank" rel="noopener"
-            ><img
-                src="https://www.freepnglogos.com/uploads/instagram-logo-png-transparent-0.png"
-                alt="insta-logo"
-              /></a>
-          </div>
-        </figure>
-        <p>AV &copy; 2020, All Rights Reserved</p>
-
-      </footer>
-    </div>
+          </Switch>  
+    </>
   );
 }
 
