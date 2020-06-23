@@ -90,6 +90,20 @@
     color: white;
 }
 
+.whitebox-expanded{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    grid-row: 4/ span 7;
+    grid-column: 1/ span 10;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (min-width: 800px){
     .main__logo{
         grid-row: 2/ span 2;
