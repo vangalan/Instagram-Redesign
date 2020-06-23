@@ -21,7 +21,7 @@ export default function Home() {
                   
             ): (
                 <div className="whitebox-btn">
-                    <button onClick={ () => setIsLogin(true)}>Login</button>
+                     <button onClick={ () => setIsLogin(true)}>Login</button>
                      <button onClick={ () => setIsSigningUp(true)} className="whitebox__signup">Sign Up</button>
                 </div>
             )}
