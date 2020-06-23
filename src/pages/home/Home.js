@@ -11,11 +11,14 @@ export default function Home() {
            <div className="main__logo">
                 <img src="/images/logo.png"/>
            </div>
-           <div className="whitebox">
+           <div className={isLogin || isSigningUp ? "whitebox-expanded" : "whitebox" }>
             { isLogin === true ?(
+                
                 <h1>Login</h1>
+
             ): isSigningUp === true ? (
                 <h1>Sign Up </h1>
+                  
             ): (
                 <div className="whitebox-btn">
                     <button onClick={ () => setIsLogin(true)}>Login</button>
