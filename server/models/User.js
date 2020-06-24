@@ -1,11 +1,14 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); // Mongoose helps mongodb define a schema
+
+// @Desc Setting a mongodb structure  
+
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
     },
-    Phone:{
-        type: Number,
+    phone:{
+        type: String,
         required: true
     },
     email:{
@@ -27,5 +30,6 @@ const userSchema = new mongoose.Schema({
     }
 });
 
+// @Desc Setting a mongodb structure  Exporting Schema and model
 
 module.exports = User = mongoose.model('user', userSchema);
