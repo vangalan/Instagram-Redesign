@@ -20,10 +20,13 @@ router.get("/", Auth, async (req, res) => {
   }
 });
 
+
+
+
+
 // @route   POST  api/auth
 // @Desc   Authenticate User & Get Token
 // @access  Access Public
-
 router.post(
   "/",
   [
