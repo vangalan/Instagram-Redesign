@@ -21,35 +21,43 @@ import NavBar from './components/nav/Nav';
 // making sure things like the back button and bookmarks
 // work properly.
 
-export default function BasicExample() {
-
-  return (
-    <React.Fragment>
-      <NavBar />
-      <Router>
-        <div>
-          <Switch>
-            <Route exact path="/">
-              <HomePage />
-            </Route>
-            <Route path="/profile">
-              <ProfilePage />
-            </Route>
-            <Route path="/feed">
-              <FeedPage />
-            </Route>
-            <Route path="/search">
-              <SearchPage />
-            </Route>
-            <Route path="/test">
-              <Test />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-    </React.Fragment>
-    //React.Fragment allows it to compile.
-  );
+export default class BasicExample extends Component {
+  constructor(props){
+    super(props);
+    this.state =  {
+      token: "",
+      hasUserLogin: false
+    };
+  }
+  render() {
+    return (
+        <React.Fragment>
+          <NavBar />
+          <Router>
+            <div>
+              <Switch>
+                <Route exact path="/">
+                  <HomePage />
+                </Route>
+                <Route path="/profile">
+                  <ProfilePage />
+                </Route>
+                <Route path="/feed">
+                  <FeedPage />
+                </Route>
+                <Route path="/search">
+                  <SearchPage />
+                </Route>
+                <Route path="/test">
+                  <Test />
+                </Route>
+              </Switch>
+            </div>
+          </Router>
+        </React.Fragment>
+        //React.Fragment allows it to compile.
+    )
+  }
 }
 
 // You can think of these components as "pages"
