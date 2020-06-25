@@ -3,8 +3,6 @@ const app = express();
 const PORT = process.env.PORT || 5000; // Server location is localhost:5000 or If process.env.PORT
 const connectDB = require('./config/db'); // Requiring Connection to mongodb and mongoose connection
 
-
-
 // Connect Database
 connectDB();
 
@@ -25,4 +23,4 @@ app.use('/api/posts', require('./routes/api/post')); // Defining Post route
 // Int Server 
 app.listen( PORT, () => {
     console.log(`PORT Is Listening on localhost:${PORT}`)
-})
+});
