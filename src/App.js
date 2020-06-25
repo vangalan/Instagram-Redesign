@@ -4,18 +4,11 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-<<<<<<< HEAD
 import HomePage from './pages/home/Home';
 import ProfilePage from './pages/profile/Profile'
 import FeedPage from './pages/feed/Feed';
 import SearchPage from './pages/search/Search';
 import Test from './pages/test/Test';
-=======
-import HomePage from './components/home/Home';
-import ProfilePage from './components/profile/Profile';
-import FeedPage from './components/feed/Feed';
-import SearchPage from './components/search/Search';
->>>>>>> fb2db3a0875e31b126ec6e92bbed898e4e874cff
 import './App.css';
 import NavBar from './components/nav/Nav';
 
@@ -47,19 +40,14 @@ export default function BasicExample() {
             <Route path="/search">
               <SearchPage />
             </Route>
-<<<<<<< HEAD
             <Route path="/test">
               <Test />
             </Route>
-          </Switch>  
-    </>
-=======
           </Switch>
         </div>
       </Router>
     </React.Fragment>
     //React.Fragment allows it to compile.
->>>>>>> fb2db3a0875e31b126ec6e92bbed898e4e874cff
   );
 }
 
