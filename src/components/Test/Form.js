@@ -43,7 +43,7 @@ export default class TestForm extends Component{
                 const body = JSON.stringify(newUser);
 
                 const response = await axios.post('api/users',body,config);
-                console.log(response.data);
+                console.log(response.data.token);
 
             } catch(err){
                 console.error(err.response.data);
