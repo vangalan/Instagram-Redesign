@@ -5,8 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import Test from './components/test/Test';
-
+import Test from './components/Test/Form';
 import HomePage from './components/home/Home';
 import ProfilePage from './components/profile/Profile';
 import FeedPage from './components/feed/Feed';
