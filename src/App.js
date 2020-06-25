@@ -11,7 +11,7 @@ import ProfilePage from './components/profile/Profile';
 import FeedPage from './components/feed/Feed';
 import SearchPage from './components/search/Search';
 import './App.css';
-import NavBar from './components/nav/Nav';
+import NavBar from './components/home/nav/Nav';
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
