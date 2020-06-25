@@ -4,11 +4,13 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import HomePage from './pages/home/Home';
-import ProfilePage from './pages/profile/Profile'
-import FeedPage from './pages/feed/Feed';
-import SearchPage from './pages/search/Search';
-import Test from './pages/test/Test';
+
+import Test from './components/test/Test';
+
+import HomePage from './components/home/Home';
+import ProfilePage from './components/profile/Profile';
+import FeedPage from './components/feed/Feed';
+import SearchPage from './components/search/Search';
 import './App.css';
 import NavBar from './components/nav/Nav';
 
