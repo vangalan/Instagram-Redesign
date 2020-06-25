@@ -4,6 +4,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+
+import Test from './components/test/Test';
+
 import HomePage from './components/home/Home';
 import ProfilePage from './components/profile/Profile';
 import FeedPage from './components/feed/Feed';
@@ -13,7 +16,6 @@ import NavBar from './components/nav/Nav';
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
-//
 // Although the page does not ever refresh, notice how
 // React Router keeps the URL up to date as you navigate
 // through the site. This preserves the browser history,
@@ -39,6 +41,9 @@ export default function BasicExample() {
             </Route>
             <Route path="/search">
               <SearchPage />
+            </Route>
+            <Route path="/test">
+              <Test />
             </Route>
           </Switch>
         </div>
