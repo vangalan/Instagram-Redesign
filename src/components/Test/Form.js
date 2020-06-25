@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import './test.css'
 
+
+import './test.css'
 export default class TestForm extends Component{
     constructor(props){
         super(props);
@@ -14,7 +14,6 @@ export default class TestForm extends Component{
         };
         this.changeHandler = this.changeHandler.bind(this);
         this.submitHandler =  this.submitHandler.bind(this);
-        
     }
     changeHandler(e){
         this.setState({   [e.target.name]: e.target.value    });
@@ -24,34 +23,9 @@ export default class TestForm extends Component{
         if(this.state.phone.includes('-')){
             console.log('Phone Inlcude - Need to be filtered')
         } else{
-            const {name, email, phone, username, password} = this.state;
-            console.log(this.state);
-            const newUser = {
-                name,
-                email,
-                password,
-                phone,
-                username
-            }
-
-            try{
-                const config = {
-                    headers: {
-                        'Content-Type': "application/json"
-                    }
-                };
-                const body = JSON.stringify(newUser);
-
-                const response = await axios.post('api/users',body,config);
-                console.log(response.data.token);
-
-            } catch(err){
-                console.error(err.response.data);
-            }
-
-
-        }
-    }
+            console.log("SUCCESS");
+        };
+    };
    
 
     render() {
