@@ -1,15 +1,15 @@
-import React from "react";
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
-import HomePage from './pages/home/Home';
-import ProfilePage from './pages/profile/Profile'
-import FeedPage from './pages/feed/Feed';
-import SearchPage from './pages/search/Search';
+import HomePage from './components/home/Home';
+import ProfilePage from './components/profile/Profile';
+import FeedPage from './components/feed/Feed';
+import SearchPage from './components/search/Search';
 import './App.css';
+import NavBar from './components/nav/Nav';
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -21,8 +21,12 @@ import './App.css';
 // work properly.
 
 export default function BasicExample() {
+
   return (
-    <>
+    <React.Fragment>
+      <NavBar />
+      <Router>
+        <div>
           <Switch>
             <Route exact path="/">
               <HomePage />
@@ -36,8 +40,11 @@ export default function BasicExample() {
             <Route path="/search">
               <SearchPage />
             </Route>
-          </Switch>  
-    </>
+          </Switch>
+        </div>
+      </Router>
+    </React.Fragment>
+    //React.Fragment allows it to compile.
   );
 }
 
