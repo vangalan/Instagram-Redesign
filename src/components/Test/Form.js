@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-
-
+import {connect} from 'react-redux';
 import './test.css'
-export default class TestForm extends Component{
+import { setAlert } from '../../actions/alert'
+import PropTypes from 'prop-types';
+
+class TestForm extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -21,7 +23,7 @@ export default class TestForm extends Component{
     async submitHandler(e){
         e.preventDefault();
         if(this.state.phone.includes('-')){
-            console.log('Phone Inlcude - Need to be filtered')
+           this.props.setAlert('Phone Inlcude - Need to be filtered','danger')
         } else{
             console.log("SUCCESS");
         };
@@ -43,4 +45,8 @@ export default class TestForm extends Component{
             </div>
         )
     }
-}
+};
+
+
+
+export default connect(null, { setAlert })( TestForm ); 
