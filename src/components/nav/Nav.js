@@ -4,9 +4,12 @@ import { FaUser } from 'react-icons/fa';
 import { FaSearch } from 'react-icons/fa';
 import { FaPaperPlane } from 'react-icons/fa';
 import './Nav.css'
+import {connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import {logout} from '../../actions/auth';
 
-export default function NavBar() {
-
+const NavBar = ({ auth: {isAuth, loading}, logout}) => {
+  
     // State Takes two params.
     const [clicked, hasBeenClickedOn] = useState(false)
 
@@ -33,7 +36,7 @@ export default function NavBar() {
                         <li><a href="/profile"><h3><FaUser />  Profile</h3></a></li>
                         <li><a href="/feed"><h3><FaHome />   Feed</h3></a></li>
                         <li><a href="/search"><h3><FaSearch />   Search</h3></a></li>
-                        <li><a href="/"><h3><FaPaperPlane />   Log off</h3></a></li>
+                        <li><a href="/" onClick={logout}><h3><FaPaperPlane />   Log off</h3></a></li>
 
                     </ul>
                 </nav>
@@ -41,3 +44,15 @@ export default function NavBar() {
         </div>
     );
 }
+
+NavBar.propTypes = {
+    logout : PropTypes.func.isRequired,
+    auth : PropTypes.object.isRequired
+}
+
+const mapStateToProps = state => ({
+    auth: state.auth
+})
+
+
+export default connect(mapStateToProps, {logout})(NavBar)

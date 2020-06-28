@@ -7,6 +7,7 @@ import {
 // Redux 
 import {Provider } from 'react-redux';
 import store from './store';
+import  { loadUser } from './actions/auth';
 
 import Test from './components/Test/Form';
 import HomePage from './components/home/Home';
@@ -16,6 +17,7 @@ import SearchPage from './components/search/Search';
 import './App.css';
 import NavBar from './components/nav/Nav';
 import LoginTest from './components/Test/LoginForm';
+import setAuthToken from './utils/setAuthToken';
 
 
 // This site has 3 pages, all of which are rendered
@@ -25,8 +27,17 @@ import LoginTest from './components/Test/LoginForm';
 // through the site. This preserves the browser history,
 // making sure things like the back button and bookmarks
 // work properly.
+if(localStorage.token){
+  setAuthToken(localStorage.token)
+}
+
 
 export default class BasicExample extends Component {
+  componentDidMount(){ //  is invoked immediately after a component is mounted
+    store.dispatch(loadUser());
+  }
+
+
   render() {
     return (
         <React.Fragment>
