@@ -28,7 +28,7 @@ body {
     padding-bottom: 40px;
   }
 
-  input[type="text"] {
+.input-fields {
     display: block;
     margin: 15px auto;
     border-radius: 10px;
@@ -38,7 +38,7 @@ body {
     font-family: arial;
   }
   
-  input[type="text"]:focus {
+.input-fields:focus {
     outline: none;
   }
 

@@ -11,8 +11,8 @@ export default function Login() {
                 <h2>Login</h2>
                 <i class="fas fa-chevron-left"></i>
                 <form className="fields">
-                    <input type="text" placeholder=" Username" />
-                    <input type="password" placeholder=" Password" />
+                    <input type="text" placeholder=" Username" className="input-fields"/>
+                    <input type="password" placeholder=" Password" className="input-fields"/>
                     <input type="submit" value="LOGIN" class="login-button" />
                 </form>
             </div>
