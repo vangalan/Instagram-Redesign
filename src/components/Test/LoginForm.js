@@ -36,7 +36,6 @@ import './test.css'
 
         return (
             <div className="test" onSubmit={this.submitHandler}>
-              
                 <form>
                    <input type="text" id="username" value={username}  name="username" placeholder="Enter Username"  onChange={this.changeHandler} required/>
                    <input type="password" id="password" value={password} name="password" placeholder="Enter Password"  onChange={this.changeHandler} required/>
