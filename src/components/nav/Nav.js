@@ -34,7 +34,8 @@ export default function NavBar() {
                         <li><a href="/feed"><h3><FaHome />   Feed</h3></a></li>
                         <li><a href="/search"><h3><FaSearch />   Search</h3></a></li>
                         <li><a href="/"><h3><FaPaperPlane />   Log off</h3></a></li>
-
+                        <li><a href="/login"><h3>Login</h3></a></li>
+                        <li><a href="/signup"><h3>Sign Up</h3></a></li>
                     </ul>
                 </nav>
             </header>

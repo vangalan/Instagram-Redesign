@@ -16,6 +16,8 @@ import SearchPage from './components/search/Search';
 import './App.css';
 import NavBar from './components/nav/Nav';
 import LoginTest from './components/Test/LoginForm';
+import Login from './components/login/login';
+import SignUp from './components/signup/signup';
 
 
 // This site has 3 pages, all of which are rendered
@@ -52,6 +54,12 @@ export default class BasicExample extends Component {
                 </Route>
                 <Route path="/test2">
                   <LoginTest />
+                </Route>
+                <Route path="/login">
+                  <Login />
+                </Route>
+                <Route path="/signup">
+                  <SignUp />
                 </Route>
               </Switch>
             </div>
