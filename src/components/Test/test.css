@@ -21,3 +21,13 @@
     color: white;
     border-radius: 25px;
 }
+
+.alert-danger{
+    z-index: 10;
+    
+    height: 50px;
+    width: 80%;
+    background: red;
+    color: white;
+
+}
