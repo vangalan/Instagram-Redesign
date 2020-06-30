@@ -10,7 +10,6 @@ const defaultState = {
 
 class Form extends React.Component {
     state = defaultState;
-
     validate = () => {
         let nameError = "";
         let emailError = "";
