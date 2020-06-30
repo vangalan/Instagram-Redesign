@@ -11,6 +11,7 @@ import  { loadUser } from './actions/auth';
 
 import Test from './components/Test/Form';
 import HomePage from './components/home/Home';
+import MainPage from './components/main/Main';
 import ProfilePage from './components/profile/Profile';
 import FeedPage from './components/feed/Feed';
 import SearchPage from './components/search/Search';
@@ -48,8 +49,8 @@ export default class BasicExample extends Component {
           <Router>
             <div>
               <Switch>
-                <Route exact path="/">
-                  <HomePage />
+                <Route exact path="/main">
+                  <MainPage />
                 </Route>
                 <Route exact path="/success">
                   <SuccesReg />
@@ -62,6 +63,9 @@ export default class BasicExample extends Component {
                 </Route>
                 <Route path="/search">
                   <SearchPage />
+                </Route>
+                <Route path="/">
+                  <HomePage />
                 </Route>
                 <Route path="/test">
                   <Test />
