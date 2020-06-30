@@ -144,8 +144,10 @@
 
 */
 
-body {
+.bg-gradient{
     background: url('/images/instgram-background.png');
+    background-repeat:no-repeat ;
+    background-position: center;
     position: relative;
     font-family: arial;
     text-align: center;
@@ -172,6 +174,8 @@ body {
     padding: 8px;
     width: 225px;
     font-size: 20px;
+    cursor: pointer;  
+
   }
   .sign-up-btn {
     color: #fff;

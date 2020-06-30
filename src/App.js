@@ -21,7 +21,7 @@ import Login from './components/login/login';
 import SignUp from './components/signup/signup';
 import setAuthToken from './utils/setAuthToken';
 
-
+import SuccesReg from './components/alerts/SuccesReg';
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 // Although the page does not ever refresh, notice how
@@ -50,6 +50,9 @@ export default class BasicExample extends Component {
               <Switch>
                 <Route exact path="/">
                   <HomePage />
+                </Route>
+                <Route exact path="/success">
+                  <SuccesReg />
                 </Route>
                 <Route path="/profile">
                   <ProfilePage />
