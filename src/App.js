@@ -11,6 +11,7 @@ import  { loadUser } from './actions/auth';
 
 import Test from './components/Test/Form';
 import HomePage from './components/home/Home';
+import MainPage from './components/main/Main';
 import ProfilePage from './components/profile/Profile';
 import FeedPage from './components/feed/Feed';
 import SearchPage from './components/search/Search';
@@ -20,8 +21,6 @@ import LoginTest from './components/Test/LoginForm';
 import Login from './components/login/login';
 import SignUp from './components/signup/signup';
 import setAuthToken from './utils/setAuthToken';
-
-import SuccesReg from './components/alerts/SuccesReg';
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 // Although the page does not ever refresh, notice how
@@ -39,20 +38,18 @@ export default class BasicExample extends Component {
     store.dispatch(loadUser());
   }
 
-
   render() {
     return (
         <React.Fragment>
           <Provider store={store}>
           <NavBar />
           <Router>
-            <div>
               <Switch>
-                <Route exact path="/">
+              <Route exact path="/">
                   <HomePage />
                 </Route>
-                <Route exact path="/success">
-                  <SuccesReg />
+                <Route path="/main">
+                  <MainPage />
                 </Route>
                 <Route path="/profile">
                   <ProfilePage />
@@ -76,7 +73,6 @@ export default class BasicExample extends Component {
                   <SignUp />
                 </Route>
               </Switch>
-            </div>
           </Router>
           </Provider>
         </React.Fragment>
