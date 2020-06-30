@@ -41,8 +41,8 @@ class Form extends React.Component {
     };
     render() {
         return (
-            <div>
-                <div className="container">
+            <React.Fragment>
+                <div className="contenedor">
                     <h2 className="text-primary">Contact Us</h2>
                     <form onSubmit={this.handleSubmit}>
                         <div className="forminput">
@@ -68,7 +68,7 @@ class Form extends React.Component {
                             />
                             <div className="validate">{this.state.emailError}</div>
                         </div>
-                        <div className="forminput">
+                        <div className="forminput_message">
                             <label for="message">Message</label>
                             <textarea
                                 placeholder="We would love to hear your feedback!"
@@ -79,7 +79,7 @@ class Form extends React.Component {
                         <button type="submit" className="btn"> Submit </button>
                     </form>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }
