@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from 'Styles.css';
+import './Styles.css' ;
 const defaultState = {
     name: "",
     email: "",
