@@ -1,4 +1,4 @@
-body {
+.bg-gradient{
     background: url('/images/instgram-background.png');
     position: relative;
     font-family: arial;
@@ -52,7 +52,8 @@ body {
   letter-spacing: 2px;
   font-weight: bold;
   margin-top: 25px;
-  }
+  cursor: pointer;  
+}
   
 .signup-button:focus {
     outline: none;
