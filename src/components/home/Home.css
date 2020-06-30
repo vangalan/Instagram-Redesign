@@ -1,6 +1,5 @@
-.home{
+/*.home {
     height: 100vh;
-    background: url('/images/instgram-background.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -142,3 +141,43 @@
         opacity: 1;    }
 
 }
+
+*/
+
+.bg-gradient{
+    background: url('/images/instgram-background.png');
+    background-repeat:no-repeat ;
+    background-position: center;
+    position: relative;
+    font-family: arial;
+    text-align: center;
+    font-weight: bold;
+}
+.button-container {
+    width: 400px;
+    border: solid white;
+    border-radius: 20px;
+    margin: 4% auto;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    padding: 125px 0;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    padding: 8px;
+    width: 225px;
+    font-size: 20px;
+    cursor: pointer;  
+
+  }
+  .sign-up-btn {
+    color: #fff;
+    background-color: #000;
+  }

@@ -1,11 +1,12 @@
+import './login.css';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
 import { Redirect } from 'react-router-dom';
+import Alert from '../Test/layout/Alert';
 
-import './test.css'
- class LoginTest extends Component{
+class Login extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -29,23 +30,32 @@ import './test.css'
     render() {
         const { password, username} = this.state;
         // Redirect if logged in 
-
         if(this.props.isAuth){
             return <Redirect to="/feed"/>
         }
 
         return (
-            <div className="test" onSubmit={this.submitHandler}>
-                <form>
-                   <input type="text" id="username" value={username}  name="username" placeholder="Enter Username"  onChange={this.changeHandler} required/>
-                   <input type="password" id="password" value={password} name="password" placeholder="Enter Password"  onChange={this.changeHandler} required/>
-                   <input type="submit" value="Submit"/>
+            <div className='bg-gradient'>
+            <div className="main__logo">
+                <img src="/images/logo.png" alt="" />
+            </div>
+            <div className="login-container">
+                <h2>Login</h2>
+                <a href="/"><i class="fas fa-chevron-left"></i></a>
+                <Alert/>
+                <form className="fields"  onSubmit={this.submitHandler}>
+                    <input type="text" value={username}   name="username" placeholder=" Username" className="input-fields" onChange={this.changeHandler}/>
+                    <input type="password" value={password} name="password" placeholder=" Password" className="input-fields" onChange={this.changeHandler}/>
+                    <input type="submit"  class="login-button" />
                 </form>
             </div>
+            
+        </div>
         )
     }
-}
-LoginTest.propTypes = {
+};
+
+Login.propTypes = {
     login : PropTypes.func.isRequired,
     isAuth: PropTypes.bool,
 };
@@ -54,4 +64,4 @@ const mapStateToProps = state => ({
     isAuth : state.auth.isAuth
 });
 
-export default connect(mapStateToProps,{ login })(LoginTest);
+export default connect(mapStateToProps,{ login })(Login);

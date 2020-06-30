@@ -7,7 +7,10 @@ const connectDB = require('./config/db'); // Requiring Connection to mongodb and
 connectDB();
 
 // using json data
-app.use(express.json({extented: false}));
+app.use(express.json({extented: false, limit: '50mb'}));
+app.use(express.static('../public/uploads'))
+
+
 
 // Setting up main server 
 app.get('/', (req,res) => { // Get is working 
@@ -17,7 +20,7 @@ app.get('/', (req,res) => { // Get is working
 // Defining Routes
 app.use('/api/users', require('./routes/api/users')); // Defining User route
 app.use('/api/auth', require('./routes/api/auth')); // Defining Auth route
-app.use('/api/profiles', require('./routes/api/profiles'));  // Defining profiles route
+app.use('/api/profile', require('./routes/api/profiles'));  // Defining profiles route
 app.use('/api/posts', require('./routes/api/post')); // Defining Post route
 
 // Int Server 
