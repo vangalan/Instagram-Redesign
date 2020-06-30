@@ -1,6 +1,7 @@
 body {
     background: url('/images/instgram-background.png');
     position: relative;
+    font-family: arial;
 }
 .main-logo {
     text-align: center;
@@ -11,13 +12,14 @@ body {
     left: 10px;
     top: 25px;
     font-size: 20px;
+    color: #000;
   }
 
 .login-container {
     width: 400px;
     border: solid white;
     border-radius: 20px;
-    margin: 2% auto;
+    margin: 4% auto;
     text-align: center;
     position: relative;
     background-color: white;
@@ -46,12 +48,14 @@ body {
     color: white;
     background-color: black;
     border: none;
-    border-radius: 10px;
-    padding: 3px;
+    border-radius: 20px;
+    padding: 4px;
     height: 30px;
     width: 175px;
     font-family: arial;
     letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 25px;
   }
   
   .login-button:focus {
