@@ -1,7 +1,10 @@
-/* body{
+ body{
     background: url('/images/instgram-background.png');
     margin:0;
- } */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
  header{
     background: url('/images/instgram-background.png');
     display: flex;

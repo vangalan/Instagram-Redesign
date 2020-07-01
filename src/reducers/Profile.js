@@ -9,7 +9,6 @@ const initalState = {
 
 export default function(state = initalState, action){
     const {type, payload} = action;
-
     switch(type){
        case GET_PROFILE: 
         return {
