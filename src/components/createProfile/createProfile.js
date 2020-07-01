@@ -72,7 +72,7 @@ const CreateProfile = ({ createProfile, history }) => {
           placeholder="Enter location"
           onChange={(e) => onChange(e)}
         />
-        <input type="submit" />
+        <input type="submit" value="Submit"  />
       </form>
     </section>
   );
