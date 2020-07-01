@@ -1,4 +1,4 @@
-/*
+/* /* /*
 
 All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS. 
         
@@ -10,7 +10,7 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 
 /* Base Styles */
 
-:root {
+/* :root {
     font-size: 10px;
 }
 
@@ -29,6 +29,7 @@ body {
     background-repeat: no-repeat;
     color: #262626;
     padding-bottom: 3rem;
+    margin: 0;
 }
 
 img {
@@ -40,7 +41,7 @@ img {
     border-radius: 15px;
 }
 
-.container {
+.profile-container {
     max-width: 93.5rem;
     margin: 0 auto;
     padding: 0 2rem;
@@ -367,4 +368,4 @@ Remove or comment-out the code block below to see how the browser will fall-back
             margin: 0;
         }
     }
-}
+}  

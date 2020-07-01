@@ -11,7 +11,7 @@ export default function Profile(){
             <img className="profile-img" src="https://ca.slack-edge.com/T5VCY49B3-UTHS981GT-2542a518cf7f-512" alt="" />
             </div>
             <header>
-	            <div className="container">
+	            <div className="profile-container">
                     <div className="profile">
                         <div className="profile-image">
                             <img src="hhttps://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt="" />
@@ -43,7 +43,7 @@ export default function Profile(){
                 </div>{/* End of container */}
             </header>
             <main>
-                <div className="container">
+                <div className="profile-container">
                     <div className="gallery">
                         <div className="gallery-item" >
                             <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" className="gallery-image" alt=""/>

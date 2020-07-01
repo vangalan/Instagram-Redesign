@@ -1,7 +1,7 @@
-body{
+/* body{
     background: url('/images/instgram-background.png');
     margin:0;
- }
+ } */
  header{
     background: url('/images/instgram-background.png');
     display: flex;
