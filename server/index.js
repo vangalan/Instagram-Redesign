@@ -2,7 +2,7 @@ const express = require('express'); // Express to a quickier way of  creating a 
 const app = express();  
 const PORT = process.env.PORT || 5000; // Server location is localhost:5000 or If process.env.PORT
 const connectDB = require('./config/db'); // Requiring Connection to mongodb and mongoose connection
-
+const path = require('path');
 // Connect Database
 connectDB();
 
@@ -11,11 +11,16 @@ app.use(express.json({extented: false, limit: '50mb'}));
 app.use(express.static('../public/uploads'))
 
 
+// Server static assets in production
+if(process.env.NODE_ENV === 'production'){
+    // Set Static Folder 
+    app.use(express.static('../build'));
 
-// Setting up main server 
-app.get('/', (req,res) => { // Get is working 
-    res.send("API IS RUNNING ")
-});
+    app.get('*', (req,res) => {
+       res.sendFile(path.resolve(__dirname), 'build', 'index.html'); 
+    })
+} 
+
 
 // Defining Routes
 app.use('/api/users', require('./routes/api/users')); // Defining User route
