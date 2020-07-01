@@ -17,6 +17,7 @@ import FeedPage from './components/feed/Feed';
 import SearchPage from './components/search/Search';
 import './App.css';
 import NavBar from './components/nav/Nav';
+import Footer from './components/footer/Footer'
 import LoginTest from './components/Test/LoginForm';
 import Login from './components/login/login';
 import SignUp from './components/signup/signup';
@@ -43,6 +44,7 @@ export default class BasicExample extends Component {
         <React.Fragment>
           <Provider store={store}>
           <NavBar />
+
           <Router>
               <Switch>
               <Route exact path="/">
@@ -59,7 +61,7 @@ export default class BasicExample extends Component {
                 </Route>
                 <Route path="/search">
                   <SearchPage />
-                </Route>
+              </Route>
                 <Route path="/test">
                   <Test />
                 </Route>
@@ -74,7 +76,8 @@ export default class BasicExample extends Component {
                 </Route>
               </Switch>
           </Router>
-          </Provider>
+        </Provider>
+        <Footer />
         </React.Fragment>
         //React.Fragment allows it to compile.
     )
