@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import './Home.css';
+import './Main.css';
 
 export default function Main() {
     return (

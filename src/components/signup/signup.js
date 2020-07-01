@@ -39,7 +39,7 @@ class SignUp extends React.Component{
     render() {
         const {name, email, password, phone, username} = this.state;
         if(this.props.isAuth){
-                return <Redirect to="/feed"/>
+                return <Redirect to="/create"/>
         };
 
         return (

@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(170, 168, 168);
+    opacity: 0.8;
     width: 300px;
     height: 100%;
     position: fixed;

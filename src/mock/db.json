@@ -1,11 +1,97 @@
 {
     "users": [
         {
+            "username": "skydweller",
+            "email": "jamesecheese@gmail.com",
+            "password": "`1234Ilovecheese",
+            "phone": "703-5650-8477",
+            "profileimage": "../images/giving-tree-mock-data.jpeg",
+            "likes":"Liked by 33 others",
+            "uploadtime":"15 minutes ago",
+            "follower": [
+                {
+                    "username": "themannathan"
+                }
+            ]
+        },
+        {
+            "username": "tomsmith",
+            "email": "jamesecheese@gmail.com",
+            "password": "`1234Ilovecheese",
+            "phone": "703-5650-8477",
+            "profileimage": "../images/travel.jpeg",
+            "likes":"Liked by 15 others",
+            "uploadtime":"20 minutes ago",
+            "follower": [
+                {
+                    "username": "themannathan"
+                }
+            ]
+        },
+        {
+            "username": "nathancha",
+            "email": "jamesecheese@gmail.com",
+            "password": "`1234Ilovecheese",
+            "phone": "703-5650-8477",
+            "profileimage": "../images/top.jpg",
+            "likes":"Liked by 37 others",
+            "uploadtime":"30 minutes ago",
+            "follower": [
+                {
+                    "username": "themannathan"
+                }
+            ]
+        },
+        {
+            "username": "gusortiz",
+            "email": "jamesecheese@gmail.com",
+            "password": "`1234Ilovecheese",
+            "phone": "703-5650-8477",
+            "profileimage": "../images/lalibela.jpeg",
+            "likes":"Liked by 53 others",
+            "uploadtime":"15 minutes ago",
+            "follower": [
+                {
+                    "username": "themannathan"
+                }
+            ]
+        },
+        {
+            "username": "themannathan",
+            "email": "jamesecheese@gmail.com",
+            "password": "`1234Ilovecheese",
+            "phone": "703-5650-8477",
+            "profileimage": "../images/france.jpg",
+            "likes":"Liked by 45 others",
+            "uploadtime":"15 minutes ago",
+            "follower": [
+                {
+                    "username": "themannathan"
+                }
+            ]
+        },
+        {
+            "username": "therealalanvang",
+            "email": "jamesecheese@gmail.com",
+            "password": "`1234Ilovecheese",
+            "phone": "703-5650-8477",
+            "profileimage": "../images/germany.jpg",
+            "likes":"liked by 33 others",
+            "uploadtime":"15 minutes ago",
+            "follower": [
+                {
+                    "username": "themannathan"
+                }
+            ]
+        },
+        {
             "username": "jamesecheese",
             "email": "jamesecheese@gmail.com",
             "password": "`1234Ilovecheese",
             "phone": "703-5650-8477",
-            "profile-img": "/images/mock-photo-header.jpeg",
+            "profileimage": "../images/mock-photo-header.jpeg",
+            "likes":"liked by 25 others",
+            "uploadtime":"15 minutes ago",
             "follower": [
                 {
                     "username": "jimmyolean"
@@ -16,13 +102,14 @@
                     "username": "jimmyolean"
                 }
             ],
+          
             "UserPhotos": [
                 {
                     "username": "jamesecheese",
                     "likes": 55,
                     "description": "The giving tree",
                     "upload-date": "07-23-2020",
-                    "image-path": "/images/giving-tree-mock-data.jpeg",
+                    "imagepath": "../images/giving-tree-mock-data.jpeg",
                     "tags": [
                         "tree",
                         "nature",
@@ -53,7 +140,7 @@
                     ],
                     "description": "Always Traveling",
                     "upload-date": "07-10-2020",
-                    "image-path": "/images/travel.jpeg",
+                    "imagepath": "../images/travel.jpeg",
                     "tags": [
                         "sky",
                         "living",
@@ -85,10 +172,11 @@
         },
         {
             "username": "jimmyolean",
+            "uploadtime":"35 minutes ago",
             "email": "jimmyolean@gmail.com",
             "password": "slimjim123",
             "phone": "123-520-1277",
-            "profile-img": "/images/mock-photo-another.jpeg",
+            "profileimage": "../images/mock-photo-another.jpeg",
             "follower": [
                 {
                     "username": "jamesecheese"
@@ -129,9 +217,11 @@
                         }
                     ]
                 },
+              
+                   
                 {
                     "username": "jimmyolean",
-                    "likes": 25,
+                    "likes": "liked by 33 others",
                     "description": "Always Traveling",
                     "upload-date": "07-10-2020",
                     "image-path": "/images/travel.jpeg",
@@ -167,4 +257,5 @@
             ]
         }
     ]
-}
+ }
+ 
