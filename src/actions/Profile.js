@@ -33,17 +33,14 @@ export const createProfile = () => (formData, history, edit = false) => async di
       },
     };
     const res = await axios.post("/api/profile", formData, config);
-    
+
     dispatch({
       type: GET_PROFILE,
-      payload: res.data,
+      payload: res.data
     });
 
-    dispatch(setAlert(edit ? "Profile Update" : "Profile Create"));
+    dispatch( setAlert(edit ? "Profile Update" : "Profile Create"));
 
-    if (!edit) {
-      history.push("/feed");
-    }
   } catch (err) {
     const errors = err.response.data.errors;
 
