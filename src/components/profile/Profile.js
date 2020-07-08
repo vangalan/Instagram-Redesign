@@ -43,7 +43,7 @@ export default function Profile(){
                 </div>{/* End of container */}
             </header>
             <main>
-                <div className="container">
+                <div className="profile-container">
                     <div className="gallery">
                         <div className="gallery-item" >
                             <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" className="gallery-image" alt=""/>
